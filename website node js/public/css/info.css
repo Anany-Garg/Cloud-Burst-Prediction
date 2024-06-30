@@ -1,0 +1,29 @@
+.form_box{
+    margin: auto;
+    padding-left:15% ;
+    padding-right:15% ;
+    padding-top: 20px;
+    font-family: 'Lato', sans-serif;
+    color:#4A92FF;
+   
+}
+
+.head{
+    background-color: #4A92FF;
+  color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    font-size: 300%;
+
+}
+
+.but{
+    padding-top: 3%;
+    padding-bottom: 50vh;
+}
+.butt{
+    font-size: 120%;
+}
+input{
+    border: 2px solid black;
+}

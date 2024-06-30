@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/info.css">
+    <title>Hello, world!</title>
+</head>
+<body>
+    <h1 class="head">Enter Information</h1>
+    
+    <div class="form_box" >
+        <form action="/home/information"  class="row g-3 needs-validation"  method="post" novalidate>
+            <div class="row mb-4">
+                <div class=" col-md-6">
+                    <label for="MinTemp">Minimun Temperature:</label>
+                    <input type="number" class="form-control" id="MinTemp" name="weather[MinTemp]" required>
+                   
+                </div>
+                <div class=" col-md-6">
+                    <label for="MaxTemp">Maximum Temperature:</label>
+                    <input type="number" class="form-control" id="MaxTemp" name="weather[MaxTemp]" required>
+                   
+                </div>
+            </div>
+            <div class="row  mb-4">
+                <div class=" col-md-4">
+                    <label for="Rainfall">Rainfall:</label>
+                    <input type="number" class="form-control" id="Rainfall" name="weather[Rainfall]" required>
+                </div>
+                <div class=" col-md-4">
+                    <label for="Evaporation">Evaporation:</label>
+                    <input type="number" class="form-control" id="Evaporation" name="weather[Evaporation]" required>
+                </div>
+                <div class=" col-md-4">
+                    <label for="Sunshine">Sunshine:</label>
+                    <input type="number" class="form-control" id="Sunshine" name="weather[Sunshine]" required>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class=" col-md-6">
+                    <label for="WindGustDir">WindGustDir:</label>
+                    <input type="text " class="form-control" id="WindGustDir" name="weather[WindGustDir]" required>
+                </div>
+                <div class=" col-md-6">
+                    <label for="WindGustSpeed">WindGustSpeed:</label>
+                    <input type="number" class="form-control" id="WindGustSpeed" name="weather[WindGustSpeed]" required>
+                </div>
+            </div>
+            <div class="row  mb-4">
+                <div class=" col-md-6">
+                    <label for="WindDir9am">WindDir9am:</label>
+                    <input type="text" class="form-control" id="WindDir9am" name="weather[WindDir9am]" required>
+                </div>
+                <div class=" col-md-6">
+                    <label for="WindDir3pm">WindDir3pm:</label>
+                    <input type="text" class="form-control" id="WindDir3pm" name="weather[WindDir3pm]" required>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class=" col-md-6">
+                    <label for="WindSpeed9am">WindSpeed9am:</label>
+                    <input type="number" class="form-control" id="WindSpeed9am" name="weather[WindSpeed9am]" required>
+                </div>
+                <div class=" col-md-6">
+                    <label for="WindSpeed3pm">WindSpeed3pm:</label>
+                    <input type="number" class="form-control" id="WindSpeed3pm" name="weather[WindSpeed3pm]" required>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class=" col-md-6">
+                    <label for="Humidity9am">Humidity9am:</label>
+                    <input type="number" class="form-control" id="Humidity9am" name="weather[Humidity9am]" required>
+                </div>
+                <div class=" col-md-6">
+                    <label for="Humidity3pm">Humidity3pm:</label>
+                    <input type="number" class="form-control" id="Humidity3pm" name="weather[Humidity3pm]" required>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class=" col-md-6">
+                    <label for="Pressure9am">Pressure9am:</label>
+                    <input type="number" class="form-control" id="Pressure9am" name="weather[Pressure9am]"required>
+                </div>
+                <div class=" col-md-6">
+                    <label for="Pressure3pm">Pressure3pm:</label>
+                    <input type="number" class="form-control" id="Pressure3pm" name="weather[Pressure3pm]" required>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class=" col-md-6">
+                    <label for="Cloud9am">Cloud9am:</label>
+                    <input type="number" class="form-control" id="Cloud9am" name="weather[Cloud9am]" required>
+                </div>
+                <div class=" col-md-6">
+                    <label for="Cloud3pm">Cloud3pm:</label>
+                    <input type="number" class="form-control" id="Cloud3pm" name="weather[Cloud3pm]" required>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class=" col-md-6">
+                    <label for="Temp9am">Temp9am:</label>
+                    <input type="number" class="form-control" id="Temp9am" name="weather[Temp9am]" required>
+                </div>
+                <div class=" col-md-6">
+                    <label for="Temp3pm">Temp3pm:</label>
+                    <input type="number" class="form-control" id="Temp3pm" name="weather[Temp3pm]"required>
+                </div>
+            </div>
+            <div class="d-grid gap-2 col-5 mx-auto but">
+                <button class="btn btn-primary butt">Submit Form</button>
+
+            </div>
+        </form>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <script src="/javascript/validate.js"></script>
+</body>
+
+</html>
